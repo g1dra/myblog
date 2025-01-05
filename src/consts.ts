@@ -26,7 +26,6 @@ type SocialLink = {
 
 export const SUPPORTED_LANGUAGES = {
   'en': 'en',
-  'es': 'es'
 };
 
 export const DEFAULT_LANG = SUPPORTED_LANGUAGES.en as SupportedLanguage;
@@ -36,7 +35,7 @@ export const siteConfig: Config = {
   description: ui[DEFAULT_LANG]["site.description"].text,
   lang: DEFAULT_LANG,
   profile: {
-    author: "Amy Dang",
+    author: "Darko Vucetic",
     description: ui[DEFAULT_LANG]["profile.description"].text
   },
   settings: {
@@ -53,17 +52,17 @@ export const SOCIAL_LINKS: Array<SocialLink> = [
   {
     icon: "mdi:github",
     friendlyName: "Github",
-    link: "https://github.com/kirontoo/astro-theme-cody",
+    link: "https://github.com/g1dra",
   },
   {
     icon: "mdi:linkedin",
     friendlyName: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/darko-vu%C4%8Deti%C4%87-7a4893112/",
   },
   {
     icon: "mdi:email",
     friendlyName: "email",
-    link: "mailto:ndangamy@gmail.com",
+    link: "mailto:darko.vucetic7@gmail.com",
   },
   {
     icon: "mdi:rss",
@@ -74,5 +73,5 @@ export const SOCIAL_LINKS: Array<SocialLink> = [
 
 // NOTE: match these entries with keys in `src/i18n/nav.ts`
 export const NAV_LINKS: Array<keyof typeof nav[SupportedLanguage]> = [
-  "home", "about", "blog", "projects", "archive"
+  "home", "about", "blog"
 ];

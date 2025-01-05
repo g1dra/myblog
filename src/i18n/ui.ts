@@ -9,10 +9,10 @@ import type { SupportedLanguage } from "src/utils/i18n";
 export default {
     "en": {
         "site.title": {
-            text: "Astro Theme Cody"
+            text: "g1dra"
         },
         "site.description": {
-            text: "A minimalist blog theme built with Astro. A quick and easy starter build for anyone who wants to start their own blog."
+            text: "A minimalist blog theme built with Astro."
         },
         "profile.description": {
             text: "your bio description"
@@ -33,32 +33,6 @@ export default {
             text: "WEBSITE"
         }
     },
-    "es": {
-        "site.title": {
-            text: "Astro Theme Cody"
-        },
-        "site.description": {
-            text: "Un tema de blog minimalista creado con Astro. Un tema de inicio rápido y sencillo para cualquiera que quiera crear su propio blog."
-        },
-        "profile.description": {
-            text: "tu descripción biográfica"
-        },
-        "blog.lastUpdated": {
-            text: "Última actualización:"
-        },
-        "sidebar.tableOfContents": {
-            text: "Tabla de contenidos"
-        },
-        "project.platform": {
-            text: "PLATAFORMA"
-        },
-        "project.stack": {
-            text: "PILA"
-        },
-        "project.website": {
-            text: "WEBSITE"
-        }
-    }
 } as const satisfies TranslationUIEntries;
 
 type TranslationUIEntries = Record<SupportedLanguage, Record<string, UIEntry>>;
